@@ -1,0 +1,60 @@
+<?php
+
+namespace RestBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Tapa
+ *
+ * @ORM\Table(name="tapa")
+ * @ORM\Entity(repositoryClass="RestBundle\Repository\TapaRepository")
+ */
+class Tapa
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom_tapa", type="string", length=255)
+     */
+    private $nomTapa;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="descrip", type="string", length=255)
+     */
+    private $descrip;
+
+    /**
+     * @var \Date
+     *
+     * @ORM\Column(name="fecha", type="date")
+     */
+    private $fecha;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="precio", type="integer")
+     */
+    private $precio;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="foto", type="string", length=255)
+     */
+    private $foto;
+
+
+}

@@ -1,0 +1,8 @@
+
+{% for tapa in tapas %}
+<h2>{{ tapa.nomTapa }}<h2>
+{{ tapa.foto }}<br>
+{{ tapa.descrip }}<br>
+{{ tapa.fecha|date("m/d/Y") }}<br>
+{{ tapa.precio }}
+{% endfor %}
