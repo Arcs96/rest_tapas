@@ -91,4 +91,5 @@ class DefaultController extends Controller
         $tapa = $repository->findById($id);
         return $this->render('RestBundle:Default:infoTapa.html.twig',array("tapas"=>$tapa));
     }
+
 }
